@@ -3,14 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <!-- 引入样式 -->
+  <link rel="icon" href="images/icon.ico">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="styles/ele-css.css">
+  <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
   <div id="app">
-    <el-button @click="visible = true">按钮</el-button>
-    <el-dialog :visible.sync="visible" title="Hello world">
-      <p>欢迎使用 Element</p>
-    </el-dialog>
+    <div class="header">
+      <div class="logo-box">
+        <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+      </div>
+      <el-menu
+        :default-active="activeIndex2"
+        class="el-menu-demo"
+        mode="horizontal"
+        @select="handleSelect"
+        background-color="#3c84ef"
+        text-color="#fff"
+        active-text-color="#ffd04b">
+        <div style="width: 1000px;margin: 0 auto;">
+          <el-menu-item index="1">首页</el-menu-item>
+          <el-submenu index="2">
+            <template slot="title">关于我们</template>
+            <el-menu-item index="2-1">选项1</el-menu-item>
+            <el-menu-item index="2-2">选项2</el-menu-item>
+            <el-menu-item index="2-3">选项3</el-menu-item>
+          </el-submenu>
+          <el-menu-item index="3">产品中心</el-menu-item>
+          <el-menu-item index="4">联系我们</el-menu-item>
+        </div>
+      </el-menu>
+    </div>
+    <div class="main">
+      <!-- main -->
+    </div>
+    <div class="footer">
+      <p>Copyright © 2013-2017 北京达通胜华装饰材料有限公司 All Rights Reserved.</p>
+      <p>全国销售热线：400-108-0869</p>
+    </div>
   </div>
 </body>
   <!-- 先引入 Vue -->
@@ -21,7 +53,13 @@
     new Vue({
       el: '#app',
       data: function() {
-        return { visible: false }
+        return { activeIndex: '1',
+        activeIndex2: '1' }
+      },
+      methods: {
+        handleSelect(key, keyPath) {
+          console.log(key, keyPath);
+        }
       }
     })
   </script>

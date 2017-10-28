@@ -16,7 +16,10 @@
   height: 100%;
 }
 .main {
+  width: 1000px;
+  margin: 0 auto;
   height: 800px;
+  background: red;
 }
 .footer {
   background: #3c84ef;

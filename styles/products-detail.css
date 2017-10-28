@@ -1,0 +1,17 @@
+.products-detail-main {
+
+}
+
+.products-detail-main dt {
+  width: 350px;
+  height: 350px;
+  background: red;
+  float: left;
+  margin-right: 20px;
+  background-origin: content-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.products-detail-main dd {
+  margin: 10px 0;
+}

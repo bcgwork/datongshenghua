@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../styles/ele-css.css">
   <link rel="stylesheet" href="../styles/home.css">
   <link rel="stylesheet" href="../styles/two.css">
-  <link rel="stylesheet" href="../styles/products.css">
+  <link rel="stylesheet" href="../styles/products-detail.css">
 </head>
 <body>
   <div id="app">
@@ -56,52 +56,21 @@
       </div>
       <div class="two-right">
         <div class="two-title">
-          产品中心
+          产品详情
           <el-breadcrumb separator-class="el-icon-arrow-right" style="float: right; line-height: 46px;">
             <el-breadcrumb-item >首页</el-breadcrumb-item>
             <el-breadcrumb-item>产品中心</el-breadcrumb-item>
+            <el-breadcrumb-item>产品详情</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
-        <div class="products-main">
-          <ul>
-            <li class="item">
-              <a href="">
-                <div class="img" style="background-image: url('http://www.qiyanli.cn/upLoad/product/month_1701/20170103100004827.jpg');"></div>
-                <p>环保健康超易洗内墙漆</p>
-              </a>
-            </li>
-            <li class="item">
-              <a href="">
-                <div class="img" style="background-image: url('http://www.qiyanli.cn/upLoad/product/month_1701/20170103100004827.jpg');"></div>
-                <p>环保健康超易洗内墙漆</p>
-              </a>
-            </li>
-            <li class="item">
-              <a href="">
-                <div class="img" style="background-image: url('http://www.qiyanli.cn/upLoad/product/month_1701/20170103100004827.jpg');"></div>
-                <p>环保健康超易洗内墙漆</p>
-              </a>
-            </li>
-            <li class="item">
-              <a href="">
-                <div class="img" style="background-image: url('http://www.qiyanli.cn/upLoad/product/month_1701/20170103100004827.jpg');"></div>
-                <p>环保健康超易洗内墙漆</p>
-              </a>
-            </li>
-            <li class="item">
-              <a href="">
-                <div class="img" style="background-image: url('http://www.qiyanli.cn/upLoad/product/month_1701/20170103100004827.jpg');"></div>
-                <p>环保健康超易洗内墙漆</p>
-              </a>
-            </li>
-          </ul>
-          <el-pagination
-              style="text-align: center;"
-              layout="prev, pager, next" 
-              :page-size="10"
-              @current-change="current"
-              :total="50">
-            </el-pagination>
+        <div class="products-detail-main">
+          <dl>
+            <dt style="background-image: url('http://www.qiyanli.cn/upLoad/product/month_1701/20170103100004827.jpg');"></dt>
+            <dd>产品名称：</dd>
+            <dd>产品介绍：</dd>
+            <dd>产品优点：</dd>
+            <dd>产品用途：</dd>
+          </dl>
         </div>
       </div>
     </div>

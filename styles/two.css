@@ -1,0 +1,85 @@
+.two-left {
+  float: left;
+  width: 260px;
+  height: 400px;
+}
+.contact {
+
+}
+.contact img {
+  width: 228px;
+  margin: 10px 0 0 16px;
+  border: 0 none;
+  vertical-align: middle;
+}
+.contact p{
+  padding-left: 16px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.contact-title {
+  height: 46px;
+  background: #2c6ebc;
+  line-height: 40px;
+  padding-left: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.two-right {
+  float: right;
+  width: 866px;
+  height: 200px;
+}
+.two-title {
+  height: 46px;
+  border-bottom: 1px solid #efefef;
+  line-height: 46px;
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.two-title::before {
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  content: "";
+  width: 5px;
+  height: 36px;
+  background: red;
+}
+.products-main ul {
+  overflow: hidden;
+}
+.products-main ul .item {
+  width: 199px;
+  height: 232px;
+  border: 1px solid #eee;
+  float: left;
+  margin: 0 8px 12px 9px;
+}
+.products-main ul .item .img {
+  width: 199px;
+  height: 199px;
+  padding: 14px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-origin: content-box;
+}
+.products-main ul .item p {
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid #eee;
+}
+.products-main ul .item a {
+  text-decoration: none;
+  color: #757575;
+}
+.products-main ul .item:hover a {
+  text-decoration: underline;
+  color: red;
+}
